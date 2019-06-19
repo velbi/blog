@@ -1,0 +1,225 @@
+@import './base';
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai');
+
+// $velbi-green:rgb(2, 167, 16);
+$velbi-green:#005BAA;
+$velbi-white: #FBFBFC;
+$text-color: rgba(255, 253, 253, 0.68);
+
+
+.mobile__nav{
+    display: none; 
+}
+
+.navbar__mobile {
+    display: none;
+}
+
+.mobile__link {
+    display: none;
+}
+
+.header {
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    background-color: $velbi-white;
+    box-shadow: 2px 2px 4px 2px #ccc;
+    top: 0;
+}
+
+.navbar {
+    width: 70%;
+    margin: 0 auto;
+    background-color: $velbi-white;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.right {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.left {
+    display: flex;
+    text-decoration: none;
+    padding-top: 1.15rem;
+    padding-bottom: 0.95rem;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+}
+
+.header__right__li {
+    text-decoration: none;
+    list-style: none;
+	letter-spacing:0.1rem;
+    margin: 0 2rem;
+    font-size: 1.8rem;
+    font-weight: lighter;
+    color: black;
+}
+
+.header__right__li:hover { 
+    color: $velbi-green;
+}
+
+
+.header__name{
+    color: $velbi-green;
+    font-weight:bold;
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 3.5rem;
+}
+
+.is-active {
+    color: $velbi-green;
+}
+
+.main__button {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1.4rem;
+    margin: 0 2rem;
+    font-size: 1.8rem;
+    font-weight: lighter;
+    align-items: center;
+    background: $velbi-white;
+    color:$velbi-green;
+    border-radius: 0.5rem;
+    border-color: $velbi-green;
+    border: solid;
+    border-width: 0.1rem;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    transition: 800ms ease all;
+}
+
+.main__button:hover {
+    background:$velbi-green;
+    border-color: $velbi-green;
+    color: $velbi-white;
+}
+  
+.main__button:focus {
+    outline:0 !important;
+}
+
+
+
+.footer {
+    width: 100%;
+    padding:1.5rem 0;
+    border-top: 0.8px solid rgba(204, 198, 198, 0.92);
+}
+
+.footer__text {
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+}
+
+@media (max-width : 800px) {
+    .navbar {
+        display: none;
+    }
+    .mobile__right {
+        width: 8rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar__mobile {
+        width: 90%;
+        margin: 0 auto;
+        background-color: $velbi-white;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+  .mobile-menu-btn {
+    margin-top: 2rem;
+    position: relative;
+    width: 20px;
+    height: 14px;
+    cursor: pointer;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+
+    
+    span {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 2px;
+      background-color: $velbi-green;
+      opacity: 1;
+      transition: opacity .5s ease;
+    }
+    
+    &:before, &:after{
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 2px;
+      background-color: $velbi-green;
+      position: absolute;
+    }
+  
+    &:before {
+      top: 0;
+      transform: rotate(0deg);
+      transition: transform .25s ease, top .25s ease .25s;
+    }
+  
+    &:after {
+      bottom: 0;
+      transform: rotate(0deg);
+      transition: transform .25s ease, bottom .25s ease .25s;
+    }
+    
+    &.open {
+      
+      span {
+        opacity: 0;
+        transition: opacity .5s ease;
+      }
+  
+      &:before {
+        top: 6px;
+        transform: rotate(45deg);
+        transition: transform .25s ease .25s, top .25s ease;
+      }
+  
+      &:after {
+        bottom: 6px;
+        transform: rotate(-45deg);
+        transition: transform .25s ease .25s, bottom .25s ease;
+      }
+    }
+  }
+  
+  .mobile__nav{
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .mobile__link{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    text-decoration: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    list-style: none;
+    text-align: center;
+  }
+}
