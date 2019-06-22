@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
 @import url('https://fonts.googleapis.com/css?family=Baloo+Bhai');
 
-// $velbi-green:rgb(2, 167, 16);
-$velbi-green:#005BAA;
+// $velbi-blue:rgb(2, 167, 16);
+$velbi-blue:#005BAA;
 $velbi-white: #FBFBFC;
 $text-color: rgba(255, 253, 253, 0.68);
 
@@ -65,20 +65,22 @@ $text-color: rgba(255, 253, 253, 0.68);
 }
 
 .header__right__li:hover { 
-    color: $velbi-green;
+    color: $velbi-blue;
 }
 
 
 .header__name{
-    color: $velbi-green;
+    color: $velbi-blue;
     font-weight:bold;
     font-family: 'Baloo Bhai', cursive;
     font-size: 3.5rem;
 }
 
+
 .is-active {
-    color: $velbi-green;
+    color: $velbi-blue;
 }
+
 
 .main__button {
     text-align: center;
@@ -90,9 +92,9 @@ $text-color: rgba(255, 253, 253, 0.68);
     font-weight: lighter;
     align-items: center;
     background: $velbi-white;
-    color:$velbi-green;
+    color:$velbi-blue;
     border-radius: 0.5rem;
-    border-color: $velbi-green;
+    border-color: $velbi-blue;
     border: solid;
     border-width: 0.1rem;
     display: flex;
@@ -102,8 +104,8 @@ $text-color: rgba(255, 253, 253, 0.68);
 }
 
 .main__button:hover {
-    background:$velbi-green;
-    border-color: $velbi-green;
+    background:$velbi-blue;
+    border-color: $velbi-blue;
     color: $velbi-white;
 }
   
@@ -159,7 +161,7 @@ $text-color: rgba(255, 253, 253, 0.68);
       transform: translateY(-50%);
       width: 18px;
       height: 2px;
-      background-color: $velbi-green;
+      background-color: $velbi-blue;
       opacity: 1;
       transition: opacity .5s ease;
     }
@@ -169,7 +171,7 @@ $text-color: rgba(255, 253, 253, 0.68);
       display: inline-block;
       width: 18px;
       height: 2px;
-      background-color: $velbi-green;
+      background-color: $velbi-blue;
       position: absolute;
     }
   
