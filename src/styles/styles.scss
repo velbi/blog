@@ -60,7 +60,7 @@ $text-color: rgba(255, 253, 253, 0.68);
 	letter-spacing:0.1rem;
     margin: 0 2rem;
     font-size: 1.8rem;
-    font-weight: lighter;
+    // font-weight: light;
     color: black;
 }
 
@@ -89,7 +89,7 @@ $text-color: rgba(255, 253, 253, 0.68);
     padding: 0.6rem 1.4rem;
     margin: 0 2rem;
     font-size: 1.8rem;
-    font-weight: lighter;
+    // font-weight: lighter;
     align-items: center;
     background: $velbi-white;
     color:$velbi-blue;
@@ -223,5 +223,10 @@ $text-color: rgba(255, 253, 253, 0.68);
     padding-bottom: 1rem;
     list-style: none;
     text-align: center;
+    color: black;
   }
+
+  .mobile__link:hover { 
+    color: $velbi-blue;
+}
 }
