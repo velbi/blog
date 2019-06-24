@@ -2,7 +2,6 @@
   "name": "velbi.io",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/eastnate/Submarine-Y.git",
   "author": "Nate Choi <jereno413@gmail.com>",
   "license": "MIT",
   "scripts": {
