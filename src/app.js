@@ -8,7 +8,7 @@ import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom'
 
 import MainPage from './MainPage/Mainpage.js'
 import CategoryPage from './CategoryPage/CategoryPage.js'
-import VideoPage from './VideoPage/VideoPage.js'
+import ComicPage from './ComicPage/ComicPage.js'
 import PortfolioPage from './PortfolioPage/PortfolioPage.js'
 import AboutPage from './AboutPage/AboutPage.js'
 
@@ -37,7 +37,7 @@ class ScrollToTop extends React.Component {
 
         <div className="right">
           <NavLink className="header__right__li" to="/category" activeClassName="is-active">Category</NavLink>
-          <NavLink className="header__right__li" to="/video" activeClassName="is-active">Video</NavLink>
+          <NavLink className="header__right__li" to="/comic" activeClassName="is-active">Comicstack</NavLink>
           <NavLink className="header__right__li" to="/portfolio" activeClassName="is-active">Portfolio</NavLink>
           <NavLink className="main__button" to="/about" activeClassName="is-active">About Me!</NavLink>
         </div>
@@ -56,7 +56,7 @@ class ScrollToTop extends React.Component {
 
     <nav className="mobile__nav">
       <NavLink className="mobile__link" to="/category">Category</NavLink>
-      <NavLink className="mobile__link" to="/video" >Video</NavLink>
+      <NavLink className="mobile__link" to="/comic" >Comicstack</NavLink>
       <NavLink className="mobile__link" to="/portfolio">Portfolio</NavLink>
       <NavLink className="mobile__link" to="/about" >About Me!</NavLink>
     </nav>
@@ -89,7 +89,7 @@ const routes = (
               
                 <Route path="/" component={MainPage} exact={true} />
                 <Route path="/category" component={CategoryPage}  />
-                <Route path="/video" component={VideoPage}  />
+                <Route path="/comic" component={ComicPage}  />
                 <Route path="/portfolio" component={PortfolioPage}/>
                 <Route path="/about" component={AboutPage}/>
                 <Route component={NotFoundPage} />

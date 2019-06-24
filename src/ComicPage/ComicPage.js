@@ -1,11 +1,15 @@
+
 import React from 'react'
 import ReactDOM from 'react-dom'
+
+import './ComicPage.scss'
+
+
 import Pagination from '../Pagination';
 
-import './CategoryPage.scss'
 
 
-class CategoryPage extends React.Component {
+class ComicPage extends React.Component {
     
     constructor() {
         super();
@@ -44,4 +48,4 @@ class CategoryPage extends React.Component {
     }
 }
 
-export default CategoryPage
+export default ComicPage
